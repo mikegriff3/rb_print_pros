@@ -90,7 +90,7 @@ export default class LandingPage extends React.Component {
             Partners
           </div>
           <div className="w3-quarter w3-section">
-            <span className="w3-xlarge">55+</span>
+            <span className="w3-xlarge">550+</span>
             <br />
             Projects Done
           </div>
@@ -271,7 +271,7 @@ export default class LandingPage extends React.Component {
                   name="Message"
                 />
                 <button
-                  className="w3-button w3-black w3-right w3-section"
+                  className="w3-button w3-black w3-right w3-section w3-hover-red"
                   type="submit"
                 >
                   <i className="fa fa-paper-plane" /> SEND MESSAGE

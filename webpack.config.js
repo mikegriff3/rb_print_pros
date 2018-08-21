@@ -2,6 +2,7 @@ const path = require("path");
 
 const SRC_DIR = path.resolve(__dirname, "client");
 const BUILD_DIR = path.resolve(__dirname, "static");
+const mode = "production";
 
 module.exports = {
   entry: path.resolve(SRC_DIR, "index.jsx"),
@@ -9,7 +10,8 @@ module.exports = {
     filename: "bundle.js",
     path: BUILD_DIR
   },
-  devtool: "source-map",
+  devtool: mode === "development" ? "inline-source-map" : false,
+  mode: mode,
   devServer: {
     historyApiFallback: true
   },
